@@ -1,0 +1,17 @@
+//SP09 requirements - Multi File Support
+using EPM.Source;
+ 
+
+context JobsDemo {
+ 
+     Entity Details {
+     	key TIME: UTCTimestamp;
+     	SOURCE: Source;
+     };	
+     
+     Entity RuntimeSchedules {
+     	key NAME: hana.VARCHAR(40);
+     	ID: Integer;
+     	JOBTYPE: hana.VARCHAR(40);
+     };	
+};
